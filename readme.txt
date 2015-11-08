@@ -50,3 +50,4 @@ In order to show the posts on the front end of your website, your new theme's te
 - Add support for dashboard "At A Glance"
 - Add custom metadata to admin edit column
 - Add custom taxonomy but have left it off by default
+- Updated the quote text area escape function to better accommodate <p> tags.
