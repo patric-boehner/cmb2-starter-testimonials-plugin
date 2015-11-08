@@ -39,7 +39,7 @@ function cmb2_testimonials_metaboxes() {
  $cmb = new_cmb2_box( array(
    'id'            => 'testimonials_metabox',
    'title'         => __( 'Testimonial Details', 'cmb2' ),
-   'object_types'  => array( 'ggp_testimonials', ), // Post type cpt - testimonials
+   'object_types'  => array( 'pbcpt_testimonials', ), // Post type cpt - testimonials
    'context'       => 'normal',
    'priority'      => 'high',
    'show_names'    => true, // Show field names on the left
