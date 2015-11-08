@@ -38,7 +38,7 @@ function cmb2_testimonials_metaboxes() {
  */
  $cmb = new_cmb2_box( array(
    'id'            => 'testimonials_metabox',
-   'title'         => __( 'Testimonial Details', 'cmb2' ),
+   'title'         => __( 'Testimonial Information', 'cmb2' ),
    'object_types'  => array( 'pbcpt_testimonials', ), // Post type cpt - testimonials
    'context'       => 'normal',
    'priority'      => 'high',
@@ -50,17 +50,19 @@ function cmb2_testimonials_metaboxes() {
    //* Add Testimonial Quote field
    $cmb->add_field( array(
       'name'    => 'Quote',
-      'desc'    => 'Add the clients quote. Plain text only with no line breaks (required).',
+      'desc'    => 'Add the clients testimonial. Plain text only with no line breaks (required).',
       'default' => '',
-      'attributes' => array ( 'required' => 'required', ), // Make required
+      'attributes' => array (
+         'required' => 'required',// Make required
+         ),
       'id'      => $prefix . 'quote',
-      'type'    => 'textarea'
+      'type'    => 'textarea',
    ) );
 
    //* Add Name field for testimonial
    $cmb->add_field( array(
-      'name'    => 'Name',
-      'desc'    => 'Add name of the person giving the testimonial (optional)',
+      'name'    => 'Client Name',
+      'desc'    => 'Add the name of the person giving the testimonial (optional).</br>Appears below the testimonial',
       'default' => '',
       'id'      => $prefix . 'name',
       'type'    => 'text'
@@ -68,11 +70,25 @@ function cmb2_testimonials_metaboxes() {
 
    //* Add Location field for testimonial
    $cmb->add_field( array(
-      'name'    => 'Location',
-      'desc'    => 'Add location information for the person giving the testimonial (either location of person or shoot location). Example: San Francisco, CA (optional)',
+      'name'    => __( 'Website URL', 'cmb' ),
+      'desc'    => 'Add the website url for the person giving the testimonial (optional).',
       'default' => '',
-      'id'      => $prefix . 'location',
-      'type'    => 'text'
+      'id'      => $prefix . 'website_url',
+      'type'    => 'text_url',
+      'protocols' => array( 'http', 'https' ), // Array of allowed protocols
    ) );
+
+   //* Add Image/File field for testimonial
+   $cmb->add_field( array(
+    'name'    => 'Client Image',
+    'desc'    => 'Upload an image or select one from the media library (optional). </br><strong>Please make sure the image selected is cropped to 300x300 px</strong>.</br>For insturctions on how to crop your selected image, please see the <strong><a href="https://codex.wordpress.org/Edit_Media#Edit_Image" target="_blank">Edit Image</a></strong> help article.',
+    'id'      => $prefix . 'client_image',
+    'type'    => 'file',
+    // Optional:
+    'options' => array(
+      'url' => false, // Hide the text input for the url
+      'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
+   ),
+) );
 
 }
