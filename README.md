@@ -8,12 +8,12 @@ Template for a basic testimonials custom post type plugin with custom meta field
    - Structure of the single testimonial post type has been moved to its own part file ```content-testimonial.php```, to make it easier to reuse the structure in both single and archive template files.
 
 ### Source:
-- https://codex.wordpress.org/Writing_a_Plugin
-**Custom Post Type Information**
-- https://codex.wordpress.org/Post_Types
-- https://codex.wordpress.org/Function_Reference/register_post_type
-- http://codex.wordpress.org/Custom_Fields
-- http://codex.wordpress.org/Function_Reference/register_taxonomy
-**CMB2 Information**
-- https://github.com/WebDevStudios/CMB2/wiki/Tips-&-Tricks#inject-static-content-in-a-field
-- https://codex.wordpress.org/Validating_Sanitizing_and_Escaping_User_Data
+- https://codex.wordpress.org/Writing_a_Plugin  
+**Custom Post Type Information**  
+- https://codex.wordpress.org/Post_Types  
+- https://codex.wordpress.org/Function_Reference/register_post_type  
+- http://codex.wordpress.org/Custom_Fields  
+- http://codex.wordpress.org/Function_Reference/register_taxonomy  
+**CMB2 Information**  
+- https://github.com/WebDevStudios/CMB2/wiki/Tips-&-Tricks#inject-static-content-in-a-field  
+- https://codex.wordpress.org/Validating_Sanitizing_and_Escaping_User_Data  
