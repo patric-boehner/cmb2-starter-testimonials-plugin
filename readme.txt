@@ -41,3 +41,4 @@ In order to show the posts on the front end of your website, your new theme's te
 - Updating version number to avoid conflict
 - Changing post type name to pbcpt_testimonials
 - Updating license information
+- Add flush rewrite rule

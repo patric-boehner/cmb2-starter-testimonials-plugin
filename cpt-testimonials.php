@@ -53,9 +53,9 @@ require plugin_dir_path( __FILE__ ) . 'includes/testimonials-cpt.php';
 require plugin_dir_path( __FILE__ ) . 'includes/testimonials-notices.php';
 
 //* Add Support for Testimonial Specific Custom Metaboxes (cmb2)
-// if( !class_exists("CMB2") ){
-// 	require_once( plugin_dir_path(__FILE__)."includes/testimonials-metaboxes.php" );
-// }
+if( !class_exists("CMB2") ){
+	require_once( plugin_dir_path(__FILE__)."includes/testimonials-metaboxes.php" );
+}
 
 
 //**********************************************
@@ -72,4 +72,16 @@ function pb_change_testimonials_per_page( $query ) {
 		$query->set( 'posts_per_page', '10' );
 	}
 
+}
+
+
+//**********************************************
+//* Flush rewrite rules on activation
+//**********************************************
+
+// https://gist.github.com/theukedge/6671340#file-gistfile1-php
+register_activation_hook( __FILE__, 'pb_cpt_rewrite_flush' );
+function pb_cpt_rewrite_flush () {
+	pb_register_cpt_testimonials(); // function from the add_action line on your CPT
+	flush_rewrite_rules(); // Fluch the rules
 }
