@@ -16,13 +16,13 @@
 // Setting up variables for latter use
 //**********************
 //* Grab the metadata from the database
-$quote   	= wpautop( get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_quote', true ) );
+$quote   	= esc_textarea(get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_quote', true ));
+// Changes double line-breaks in the text into HTML paragraphs
+$quote 		= wpautop($quote);
 $name    	= get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_name', true );
 $url     	= get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_website_url', true );
 $location	= get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_location', true );
 $image		= wp_get_attachment_image( get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_client_image_id', 1 ), 'thumbnail' );
-
-// wpautop( get_post_meta( get_the_ID(), 'wiki_test_wysiwyg', true ) );
 
 //* Setup citation sturcture and conditional check
 if ( !empty( $url ) ) {
