@@ -68,7 +68,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/testimonials-notices.php';
 add_action( 'pre_get_posts', 'pb_change_testimonials_per_page' );
 function pb_change_testimonials_per_page( $query ) {
 
-	if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'ggp_testimonials' ) ) {
+	if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'pbcpt_testimonials' ) ) {
 		$query->set( 'posts_per_page', '10' );
 	}
 

@@ -1,7 +1,10 @@
 === Testimonials - Custom Post Type ===
 Contributors: Patrick Boehner
 Requires at least: 3.0
+Tags: custom post types, testimonials, cmb2
 Tested up to: 4.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Custom post type for creating testimonial postings with custom meta fields.
 
@@ -25,7 +28,7 @@ In order to show the posts on the front end of your website, your new theme's te
 5. Manually upload the "cmb2" plugin to your "/wp-content/plugins/" directory.
 6. Activate the CMB2 plugin through the "Plugins" menu in WordPress.
 
-== Updates ==
+== Changelog ==
 8.19.15
 - Setup the custom post type
 8.25.15
@@ -37,3 +40,4 @@ In order to show the posts on the front end of your website, your new theme's te
 - Updating readme text and instructions.
 - Updating version number to avoid conflict
 - Changing post type name to pbcpt_testimonials
+- Updating license information
