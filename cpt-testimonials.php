@@ -28,13 +28,6 @@ To activate this as a plugin just add to wp-contents/plugins and activate in Das
 Don't forget to pay a visit to permalinks after you create a CPT and save the permalinks settings again.
 */
 
-/*
-Custom Post Type Information
-https://codex.wordpress.org/Post_Types
-https://codex.wordpress.org/Function_Reference/register_post_type
-http://codex.wordpress.org/Custom_Fields
-http://codex.wordpress.org/Function_Reference/register_taxonomy
-*/
 
 //**********************************************
 //* Security
