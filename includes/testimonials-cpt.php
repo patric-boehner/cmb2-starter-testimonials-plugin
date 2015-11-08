@@ -83,7 +83,7 @@ function pb_register_cpt_testimonials() {
 		'public'              => true,
 		'show_ui'             => true,
 		'show_in_menu'        => true,
-		'menu_position'       => 5,
+		'menu_position'       => 5, // After posts
 		'menu_icon'           => 'dashicons-editor-quote',
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => false,
