@@ -71,7 +71,7 @@ function cmb2_testimonials_metaboxes() {
    //* Add Location field for testimonial
    $cmb->add_field( array(
       'name'    => __( 'Website URL', 'cmb' ),
-      'desc'    => 'Add the website url for the person giving the testimonial (optional).',
+      'desc'    => 'Add the website url for the person giving the testimonial (optional).</br>The link is added to the clients name.',
       'default' => '',
       'id'      => $prefix . 'website_url',
       'type'    => 'text_url',

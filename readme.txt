@@ -37,8 +37,9 @@ In order to show the posts on the front end of your website, your new theme's te
 - Updated readme text
 11.7.15
 - Updating cpt name
-- Updating readme text and instructions.
+- Updating readme text and instructions
 - Updating version number to avoid conflict
 - Changing post type name to pbcpt_testimonials
 - Updating license information
 - Add flush rewrite rule
+- Add custom metafields for a url and image
