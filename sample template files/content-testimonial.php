@@ -44,8 +44,6 @@ else {
 //* Add testimonial structure
 echo '<div class="testimonial">';
 
-//* Turn get_post_meta into variable for conditional check to see if custom meta boxes are filled in, if empty don't return any metadata
-
 //* Conditionaly add client Quote
 if ( !empty( $quote ) ) {
 
