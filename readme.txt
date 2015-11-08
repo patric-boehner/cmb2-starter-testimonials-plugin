@@ -43,3 +43,8 @@ In order to show the posts on the front end of your website, your new theme's te
 - Updating license information
 - Add flush rewrite rule
 - Add custom metafields for a url and image
+11.8.15
+- Add location custom meta field
+- Add sample template files
+- Cleanup notes and readme files
+- Add support for dashboard "At A Glance"

@@ -72,4 +72,7 @@ if ( !empty( $quote ) ) {
 //* End testimonial structure
 echo '</div>';
 
+//* Edit post link
+echo ''.edit_post_link( '(Edit)' ).'';
+
 ?>
