@@ -6,7 +6,7 @@
  * http://nacin.com/2010/05/11/in-wordpress-prefix-everything/
  *
  * @category YourThemeOrPlugin
- * @package  Demo_CMB2
+ * @package  CMB2
  * @license  http://www.opensource.org/licenses/gpl-license.php GPL v2.0 (or later)
  * @link     https://github.com/WebDevStudios/CMB2
  */
@@ -50,7 +50,7 @@ function cmb2_testimonials_metaboxes() {
    //* Add Testimonial Quote field
    $cmb->add_field( array(
       'name'    => 'Quote',
-      'desc'    => 'Add the clients testimonial. Plain text only with no line breaks (required).',
+      'desc'    => 'Add the clients testimonial. Plain text only but multiple paragraphs are supported (required).',
       'default' => '',
       'attributes' => array (
          'required' => 'required',// Make required

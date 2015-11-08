@@ -4,6 +4,7 @@
  * Help Notices
  * @author Patrick Boehner
  * @link http://www.patrickboehner.com
+ * @package Testimonials
  * @version 1.0
  *
  */

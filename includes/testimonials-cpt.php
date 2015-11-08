@@ -4,6 +4,7 @@
  * Create Testimonials Custom Post Type
  * @author Patrick Boehner
  * @link http://www.patrickboehner.com
+ * @package Testimonials
  * @version 1.0
  *
  */
