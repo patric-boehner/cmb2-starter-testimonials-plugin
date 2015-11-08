@@ -1,7 +1,7 @@
 # Template Testimonials Plugin
-Template for a basic testimonials custom post type plugin with custom meta fields using CMB2
+Template for a basic testimonials custom post type plugin with custom meta fields using CMB2.
 
-*This is my first public repo. I haven't looked up what the recommended information to go into the readme.md file is, so for the moment you can check out the reademe.txt file for the moment*
+*This is my first public repo. I haven't looked up what the recommended information to go into the readme.md file is, so for the moment you can check out the reademe.txt file.*
 
 ## To Do:
  1. ~~The single and archive post type will share vary similar structure so i should break out the main content structure into a separate part file to include into the respective templates~~.
