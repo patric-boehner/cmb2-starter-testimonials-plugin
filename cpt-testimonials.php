@@ -41,9 +41,10 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 //* Load Plugin Files
 //**********************************************
 
-// Required files for registering the post type, taxonomies, metaboxes, and notices.
+// Required files for registering the post type, taxonomies, metaboxes, edit columns, and notices.
 require plugin_dir_path( __FILE__ ) . 'includes/testimonials-cpt.php';
 require plugin_dir_path( __FILE__ ) . 'includes/testimonials-notices.php';
+require plugin_dir_path( __FILE__ ) . 'includes/testimonial-edit-columns.php';
 
 //* Add Support for Testimonial Specific Custom Metaboxes (cmb2)
 if( !class_exists("CMB2") ){
@@ -89,8 +90,8 @@ function pb_add_dashboard_counts() {
 //**********************************************
 //* Flush rewrite rules on activation
 //**********************************************
-
 // https://gist.github.com/theukedge/6671340#file-gistfile1-php
+
 register_activation_hook( __FILE__, 'pb_cpt_rewrite_flush' );
 function pb_cpt_rewrite_flush () {
 	pb_register_cpt_testimonials(); // function from the add_action line on your CPT
