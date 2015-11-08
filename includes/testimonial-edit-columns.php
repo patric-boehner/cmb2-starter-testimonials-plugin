@@ -62,8 +62,8 @@ function pb_manage_testimonials_columns( $column, $post_id ) {
 		//* If displaying the 'image' column.
 		case 'image' :
 
-			//* Get the post meta.
-			$image = wp_get_attachment_image( get_post_meta( $post_id, '_cmb2_testimonials_metabox_client_image_id', 1 ), 'thumbnail' );
+			//* Get the image meta and adjust output size variable
+			$image = wp_get_attachment_image( get_post_meta( $post_id, '_cmb2_testimonials_metabox_client_image_id', 1 ), array(95, 95) );
 
 			//* If no image is found, output a default message.
 			if ( empty( $image ) )
