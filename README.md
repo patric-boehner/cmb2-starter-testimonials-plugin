@@ -10,3 +10,5 @@ Template for a basic testimonials custom post type plugin with custom meta field
 - https://codex.wordpress.org/Function_Reference/register_post_type
 - http://codex.wordpress.org/Custom_Fields
 - http://codex.wordpress.org/Function_Reference/register_taxonomy
+**CMB2 Information**
+- https://github.com/WebDevStudios/CMB2/wiki/Tips-&-Tricks#inject-static-content-in-a-field
