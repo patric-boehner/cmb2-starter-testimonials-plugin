@@ -43,8 +43,10 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 // Required files for registering the post type, taxonomies, metaboxes, edit columns, and notices.
 require plugin_dir_path( __FILE__ ) . 'includes/testimonials-cpt.php';
+//* Taxonomy is turned off by default
+// require plugin_dir_path( __FILE__ ) . 'includes/testimonials-taxonomy.php';
 require plugin_dir_path( __FILE__ ) . 'includes/testimonials-notices.php';
-require plugin_dir_path( __FILE__ ) . 'includes/testimonial-edit-columns.php';
+require plugin_dir_path( __FILE__ ) . 'includes/testimonials-edit-columns.php';
 
 //* Add Support for Testimonial Specific Custom Metaboxes (cmb2)
 if( !class_exists("CMB2") ){
