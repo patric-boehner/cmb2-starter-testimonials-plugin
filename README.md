@@ -8,7 +8,7 @@ Template for a basic testimonials custom post type plugin with custom meta field
    - Structure of the single testimonial post type has been moved to its own part file ```content-testimonial.php```, to make it easier to reuse the structure in both single and archive template files.
  2. Build the archive post template for testimonials.
 
-### Source:
+#### Source:
 - https://codex.wordpress.org/Writing_a_Plugin  
 **Custom Post Type Information**  
 - https://codex.wordpress.org/Post_Types  
