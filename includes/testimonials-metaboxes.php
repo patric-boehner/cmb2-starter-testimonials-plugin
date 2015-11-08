@@ -78,6 +78,15 @@ function cmb2_testimonials_metaboxes() {
       'protocols' => array( 'http', 'https' ), // Array of allowed protocols
    ) );
 
+   //* Add Location field for testimonial
+   $cmb->add_field( array(
+      'name'    => 'Location',
+      'desc'    => 'Add location information for the person giving the testimonial (optional).</br>Example: San Francisco, CA',
+      'default' => '',
+      'id'      => $prefix . 'location',
+      'type'    => 'text'
+   ) );
+
    //* Add Image/File field for testimonial
    $cmb->add_field( array(
     'name'    => 'Client Image',
