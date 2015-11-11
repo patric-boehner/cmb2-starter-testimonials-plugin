@@ -57,8 +57,10 @@ if ( !empty( $quote ) ) {
 	//* Output quote
 	echo '<blockquote>';
 	echo $quote;
-	echo '<cite>';
-		//* Conditionaly add citation
+	//* Conditionaly add citation
+	if ( empty( $name ) || empty( $location ) ) {
+		echo '<cite>';
+		//* Conditionaly add name
 		if ( !empty( $name ) ) {
 			echo $citation;
 		}
@@ -66,6 +68,7 @@ if ( !empty( $quote ) ) {
 		if ( !empty( $location) ) {
 			echo $place;
 		}
+	}
 	echo '</cite>';
 	echo '</blockquote>';
 

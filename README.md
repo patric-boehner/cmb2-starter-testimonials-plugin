@@ -125,7 +125,7 @@ A copy of the license is included in the root of the plugin’s directory. The f
 ## Credits & References
 
 - [WebDevStudios](https://github.com/webdevstudios) - Maintaners of CMB2
-- [Bill Erickson](https://github.com/billerickson/) - For help in understanding Genesis, cpt's as core plugins, and avoiding fornt end dependancy when using custom metadata fields.
+- [Bill Erickson](https://github.com/billerickson/) - For help in understanding Genesis, cpt's as core plugins, and avoiding front end dependency when using custom metadata fields.
 - [Justin Tadlock](http://justintadlock.com/) - For his tutorial and code snipets relating to adding custom meta to the admin edit columsn.
 - [Gary Jones](http://gamajo.com) - For his tutorial and code for the widget notice.
 
@@ -137,12 +137,12 @@ A copy of the license is included in the root of the plugin’s directory. The f
 - https://codex.wordpress.org/Validating_Sanitizing_and_Escaping_User_Data
 
 **Custom Post Type Information**
-  
+
 - https://codex.wordpress.org/Post_Types  
 - https://codex.wordpress.org/Function_Reference/register_post_type  
 - http://codex.wordpress.org/Custom_Fields  
 - http://codex.wordpress.org/Function_Reference/register_taxonomy
- 
+
 **CMB2 Information**
 
 - https://github.com/WebDevStudios/CMB2/wiki/Tips-&-Tricks##inject-static-content-in-a-field
