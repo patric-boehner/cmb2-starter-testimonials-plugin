@@ -52,7 +52,7 @@ I build the post type sample template files on the [Genesis Framework ](http://m
 The ```content-testimonial.php``` contains all the functions to output the testimonials custom metadata and all its basic markup structure, and can be used within any theme. You will simply need to modify your loop to include it.
 
 #### Example
-Using the Twenty Fifteen ```single.php``` file for example, you could easily modify the loop of the single post template to include the ```content-testimonial.php``` file.
+Using the Twenty Fifteen ```single.php``` file for example, you could easily modify the loop of the single post template to include the ```content-testimonial.php``` file. You would also, in this example, need to add aditional structure to the ```content-testimonial.php``` as needed for your theme.
 
 ```php
 <?php get_header(); ?>
