@@ -53,3 +53,5 @@ In order to show the posts on the front end of your website, your new theme's te
 - Updated the quote text area escape function to better accommodate <p> tags.
 11.10.15
 - Updating cite conditional statement to avoid empty output.
+11.11.15
+- Remove support for adding custom post type to admin at a glance widget.

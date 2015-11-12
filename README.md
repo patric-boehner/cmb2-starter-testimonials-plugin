@@ -20,7 +20,6 @@ The template testimonials plugins contains the following files:
    - ```testimonials-metaboxes.php```. Contains the functions to register the custom meta boxes.
    - ```testimonials-notices.php```. Contains any plugin notices. In particular a check to see if CMB2 is already installed upon the plugins activation.
    - ```testimonials-edit-columns.php```. Contain the functions needed to output the custom meta data in the admin edit screen columns.
-   - ```testimonials-dashboard.php```. Contains a function to add the cpt's post count to the Dashboard's ```At A Glance``` widget.
 
 ## Features
 It comes with a few basic metadata fields:

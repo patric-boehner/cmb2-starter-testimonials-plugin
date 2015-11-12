@@ -53,12 +53,6 @@ if( !class_exists("CMB2") ){
 	require_once( plugin_dir_path(__FILE__)."includes/testimonials-metaboxes.php" );
 }
 
-// Add suport for post count in admin screen
-// https://github.com/GaryJones/Gamajo-Dashboard-Glancer
-if ( !class_exists( "pb_dashboard_glancer" ) ) {
-   require_once( plugin_dir_path(__FILE__)."includes/testimonials-dashboard.php" );
-}
-
 
 //**********************************************
 //* Adjust the Post Query
