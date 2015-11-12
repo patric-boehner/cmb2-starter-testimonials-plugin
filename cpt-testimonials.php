@@ -72,18 +72,6 @@ function pb_change_testimonials_per_page( $query ) {
 
 
 //**********************************************
-//* Hook Into Admin Screen Widget
-//**********************************************
-
-// Hook into the widget (or any hook before it!)
-add_action( 'dashboard_glance_items', 'pb_add_dashboard_counts' );
-function pb_add_dashboard_counts() {
-    $glancer = new pb_dashboard_glancer;
-    $glancer->add( 'pbcpt_testimonials' ); // show only published "testimonials" entries
-}
-
-
-//**********************************************
 //* Flush rewrite rules on activation
 //**********************************************
 // https://gist.github.com/theukedge/6671340#file-gistfile1-php

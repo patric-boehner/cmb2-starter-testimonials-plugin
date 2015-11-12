@@ -54,4 +54,8 @@ In order to show the posts on the front end of your website, your new theme's te
 11.10.15
 - Updating cite conditional statement to avoid empty output.
 11.11.15
+<<<<<<< HEAD
 - Remove support for adding custom post type to admin at a glance widget.
+=======
+- Remove support for admin At A Glance widget till i understand it better.
+>>>>>>> develop

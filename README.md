@@ -3,7 +3,7 @@ A basic template for a simple and customizable testimonials plugin for wordpress
 
 This should be an easy template to reuses and customize in future projects.
 
-*This is my first public repo so i am still figuring out how best to use the ```readme.md``` file. Till it's full flushed out you can also check out the ```readme.txt``` file.*
+*This is my first public repo so i am still figuring out how best to use the ```readme.md``` file.*
 
 ## Contents
 The template testimonials plugins contains the following files:
@@ -157,4 +157,4 @@ A copy of the license is included in the root of the plugin’s directory. The f
 
 - https://yoast.com/custom-post-type-snippets/
 - http://justintadlock.com/archives/2011/06/27/custom-columns-for-custom-post-types
-- http://gamajo.com/dashboard-glancer
+- ~~http://gamajo.com/dashboard-glancer~~
