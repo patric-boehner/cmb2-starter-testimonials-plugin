@@ -88,7 +88,7 @@ function pb_manage_testimonials_columns( $column, $post_id ) {
 			//* If there is a location output text.
 			else
 				echo substr(' '.esc_textarea($quote).' ', 0, $trim_length);
-				echo "...";
+				echo "&#91;&hellip;&#93;";
 			break;
 
 
