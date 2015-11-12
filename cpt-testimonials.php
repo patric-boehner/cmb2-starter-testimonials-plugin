@@ -53,12 +53,6 @@ if( !class_exists("CMB2") ){
 	require_once( plugin_dir_path(__FILE__)."includes/testimonials-metaboxes.php" );
 }
 
-// Add suport for post count in admin screen
-// https://github.com/GaryJones/Gamajo-Dashboard-Glancer
-if ( !class_exists( "pb_dashboard_glancer" ) ) {
-   require_once( plugin_dir_path(__FILE__)."includes/testimonials-dashboard.php" );
-}
-
 
 //**********************************************
 //* Adjust the Post Query
@@ -74,18 +68,6 @@ function pb_change_testimonials_per_page( $query ) {
 		$query->set( 'posts_per_page', '10' );
 	}
 
-}
-
-
-//**********************************************
-//* Hook Into Admin Screen Widget
-//**********************************************
-
-// Hook into the widget (or any hook before it!)
-add_action( 'dashboard_glance_items', 'pb_add_dashboard_counts' );
-function pb_add_dashboard_counts() {
-    $glancer = new pb_dashboard_glancer;
-    $glancer->add( 'pbcpt_testimonials' ); // show only published "testimonials" entries
 }
 
 
