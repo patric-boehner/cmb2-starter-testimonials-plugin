@@ -36,6 +36,31 @@ Since the custom meta fields are built with the CMB2 toolkit, customizing the av
 
 The custom taxonomy is commented out in the ```cpt-testimonials.php``` file by default.
 
+## Structure
+For the sake of reference and later styling, the structure for the testimonials as output via the ```content-testimonial.php``` file is outlined bellow. Some of the structure is conditional depending on what metadata fields are provided:
+
+```html
+<div class="testimonial">
+   <div class="testimonial-image">
+      <img src="" alt="" />
+   </div>
+   <blockquote>
+      <p>
+         <!-- testimonial text -->
+      </p>
+      <cite>
+         <!-- ::before - for styling -->
+         <a href="#">
+         <!-- name & link text -->
+         </a>
+         <span>
+         <!-- location text -->
+         </span>
+      </cite>
+   </blockquote>
+</div>
+```
+
 ## Sample Files
 The template plugin contains a folder called ```sample template files```. This folder contains samples of the necessary theme template files to output the custom metaboxes for the testimonial post type.
 
@@ -44,6 +69,7 @@ The template plugin contains a folder called ```sample template files```. This f
 - ```archive-pbcpt_testimonials.php```
 - ```single-pbcpt_testimonials.php```
 - ```content-testimonial.php```
+- ``_testimonials.sass````
 
 #### Notice
 I build the post type sample template files on the [Genesis Framework ](http://my.studiopress.com/themes/genesis/). The plugin itself will run independent of the theme being used, but the ```archive-``` and ```single-``` sample template files contain functions and hooks specific to the Genesis Framework. Each is using the ```get_template_part( 'content', 'testimonial', get_post_format() );``` function to include the ```content-testimonial.php``` file.
@@ -155,6 +181,7 @@ A copy of the license is included in the root of the plugin’s directory. The f
 
 **Others**
 
+- http://alistapart.com/blog/post/more-thoughts-about-blockquotes-than-are-strictly-required
 - https://yoast.com/custom-post-type-snippets/
 - http://justintadlock.com/archives/2011/06/27/custom-columns-for-custom-post-types
 - ~~http://gamajo.com/dashboard-glancer~~

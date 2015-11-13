@@ -55,3 +55,7 @@ In order to show the posts on the front end of your website, your new theme's te
 - Updating cite conditional statement to avoid empty output.
 11.11.15
 - Remove support for admin At A Glance widget till i understand it better.
+11.13.15
+- Updating taxonomy parameter
+- Updating citation structure and and remove any hard backed styling markup.
+- Add sass sample
