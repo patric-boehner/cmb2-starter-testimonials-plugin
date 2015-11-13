@@ -58,4 +58,11 @@ In order to show the posts on the front end of your website, your new theme's te
 - Remove support for adding custom post type to admin at a glance widget.
 =======
 - Remove support for admin At A Glance widget till i understand it better.
+<<<<<<< HEAD
+>>>>>>> develop
+=======
+11.13.15
+- Updating taxonomy parameter
+- Updating citation structure and and remove any hard backed styling markup.
+- Add sass sample
 >>>>>>> develop

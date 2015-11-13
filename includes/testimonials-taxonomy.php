@@ -72,7 +72,7 @@ function cpt_register_testimonial_taxonomy() {
 		'query_var'                  => true,
 		'rewrite'                    => $rewrite,
 	);
-	register_taxonomy( 'testimonial-category', array( 'pbcpt_testimonials' ), $args );
+	register_taxonomy( 'testimonial_category', array( 'pbcpt_testimonials' ), $args );
 
 
 }

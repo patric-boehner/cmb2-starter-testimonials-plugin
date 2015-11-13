@@ -26,18 +26,18 @@ $image		= wp_get_attachment_image( get_post_meta( get_the_ID(), '_cmb2_testimoni
 
 //* Setup citation sturcture and conditional check
 if ( !empty( $url ) ) {
-	$citation = '&mdash;&nbsp;<a href="' .esc_url($url). '" target="_blank">'.esc_textarea($name). '</a>';
+	$citation = '<a href="' .esc_url($url). '" target="_blank">'.esc_textarea($name). '</a>';
 }
 else {
-	$citation = '&mdash;&nbsp;'.esc_textarea($name). '';
+	$citation = esc_textarea($name);
 }
 
 //* Setup conditional check on place to check if a name proceds or not
 if ( !empty( $name ) ) {
-	$place = '&sbquo;&nbsp;'.esc_textarea($location).'';
+	$place = esc_textarea($location);
 }
 else {
-	$place = '&mdash;&nbsp;'.esc_textarea($location).'';
+	$place = esc_textarea($location);
 }
 
 //**********************
@@ -57,18 +57,17 @@ if ( !empty( $quote ) ) {
 	//* Output quote
 	echo '<blockquote>';
 	echo $quote;
-	//* Conditionaly add citation
-	if ( empty( $name ) || empty( $location ) ) {
+	if ( !empty( $name ) || !empty( $location ) ) {
 		echo '<cite>';
-		//* Conditionaly add name
-		if ( !empty( $name ) ) {
-			echo $citation;
+			//* Conditionaly add citation
+			if ( !empty( $name ) ) {
+				echo $citation;
+			}
+			//* Conditionaly add location
+			if ( !empty( $location) ) {
+				echo '<span>'.$place.'</span>';
+			}
 		}
-		//* Conditionaly add location
-		if ( !empty( $location) ) {
-			echo $place;
-		}
-	}
 	echo '</cite>';
 	echo '</blockquote>';
 
