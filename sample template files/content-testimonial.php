@@ -32,13 +32,6 @@ else {
 	$citation = esc_textarea($name);
 }
 
-//* Setup conditional check on place to check if a name proceds or not
-if ( !empty( $name ) ) {
-	$place = esc_textarea($location);
-}
-else {
-	$place = esc_textarea($location);
-}
 
 //**********************
 
@@ -65,7 +58,7 @@ if ( !empty( $quote ) ) {
 			}
 			//* Conditionaly add location
 			if ( !empty( $location) ) {
-				echo '<span>'.$place.'</span>';
+				echo '<span>'.$location.'</span>';
 			}
 		}
 	echo '</cite>';

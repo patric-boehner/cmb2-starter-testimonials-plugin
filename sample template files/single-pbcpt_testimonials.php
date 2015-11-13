@@ -42,7 +42,7 @@ add_action( 'genesis_entry_content', 'pb_register_testimonial_meta' );
 function pb_register_testimonial_meta() {
 
    //* Include the post format-specific template for the testimonial content.
-   get_template_part( 'content', 'testimonial', get_post_format() );
+   get_template_part( 'content', 'testimonial' );
 
 }
 
