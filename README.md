@@ -37,7 +37,7 @@ Since the custom meta fields are built with the CMB2 toolkit, customizing the av
 The custom taxonomy is commented out in the ```cpt-testimonials.php``` file by default.
 
 ## Structure
-For the sake of reference and later styling, the structure for the testimonials as output via the ```content-testimonial.php``` file is outlined bellow. Some of the structure is conditional depending on what metadata fields are provided:
+For the sake of reference and later styling, the structure for the testimonials as output via the ```content-testimonial.php``` file is outlined bellow. Some of the structure is conditional depending on what metadata fields are provided. See the sample sass file.
 
 ```html
 <div class="testimonial">
@@ -92,7 +92,7 @@ Using the Twenty Fifteen ```single.php``` file for example, you could easily mod
 			/*
 			 * Include the testimonial post format-specific template for the content.
 			 */
-			get_template_part( 'content', 'testimonial', get_post_format() );
+			get_template_part( 'content', 'testimonial' );
 
 		// End the loop.
 		endwhile;
