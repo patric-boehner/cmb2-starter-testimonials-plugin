@@ -19,19 +19,18 @@
 $quote   	= esc_textarea(get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_quote', true ));
 // Changes double line-breaks in the text into HTML paragraphs
 $quote 		= wpautop($quote);
-$name    	= get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_name', true );
-$url     	= get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_website_url', true );
-$location	= get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_location', true );
+$name    	= esc_textarea(get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_name', true ));
+$url     	= esc_url(get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_website_url', true ));
+$location	= esc_textarea(get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_location', true ));
 $image		= wp_get_attachment_image( get_post_meta( get_the_ID(), '_cmb2_testimonials_metabox_client_image_id', 1 ), 'thumbnail' );
 
 //* Setup citation sturcture and conditional check
 if ( !empty( $url ) ) {
-	$citation = '<a href="' .esc_url($url). '" target="_blank">'.esc_textarea($name). '</a>';
+	$citation = '<span class="testimonial-name" title="Testimonial from ' .$name. '"><a href="' .$url. '" target="_blank">' .$name. '</a></span>';
 }
 else {
-	$citation = esc_textarea($name);
+	$citation = '<span class="testimonial-name" title="Testimonial from ' .$name. '">' .$name. '</span>';
 }
-
 
 //**********************
 
@@ -44,7 +43,7 @@ if ( !empty( $quote ) ) {
 
 	//* Conditionaly add clients image
 	if ( !empty( $image ) ) {
-		echo '<div class="testimonial-image">'.$image.'</div>';
+		echo '<div class="testimonial-image">' .$image. '</div>';
 	}
 
 	//* Output quote
@@ -58,7 +57,7 @@ if ( !empty( $quote ) ) {
 			}
 			//* Conditionaly add location
 			if ( !empty( $location) ) {
-				echo '<span>'.$location.'</span>';
+				echo '<span class="testimonial-location">' .$location. '</span>';
 			}
 		}
 	echo '</cite>';

@@ -37,7 +37,7 @@ Since the custom meta fields are built with the CMB2 toolkit, customizing the av
 The custom taxonomy is commented out in the ```cpt-testimonials.php``` file by default.
 
 ## Structure
-For the sake of reference and later styling, the structure for the testimonials as output via the ```content-testimonial.php``` file is outlined bellow. Some of the structure is conditional depending on what metadata fields are provided. See the sample sass file.
+For the sake of reference and later styling, the structure for the testimonials as output via the ```content-testimonial.php``` file is outlined bellow. Some of the structure is conditional depending on what metadata fields are provided. See the sample sass file or check out the [example code pen](http://codepen.io/patric-boehner/pen/jbXQao).
 
 ```html
 <div class="testimonial">
@@ -50,10 +50,13 @@ For the sake of reference and later styling, the structure for the testimonials 
       </p>
       <cite>
          <!-- ::before - for styling -->
+         <span class="testimonial-name">
+         <!-- name without link text -->
          <a href="#">
-         <!-- name & link text -->
+         <!-- name with link text -->
          </a>
-         <span>
+         </span>
+         <span class="testimonial-location" >
          <!-- location text -->
          </span>
       </cite>
@@ -184,4 +187,5 @@ A copy of the license is included in the root of the plugin’s directory. The f
 - http://alistapart.com/blog/post/more-thoughts-about-blockquotes-than-are-strictly-required
 - https://yoast.com/custom-post-type-snippets/
 - http://justintadlock.com/archives/2011/06/27/custom-columns-for-custom-post-types
-- ~~http://gamajo.com/dashboard-glancer~~
+- ~~http://gamajo.com/dashboard-glancer~~  
+- https://github.com/justintadlock/content-type-standards  
