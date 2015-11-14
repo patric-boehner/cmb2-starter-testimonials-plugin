@@ -54,25 +54,13 @@ In order to show the posts on the front end of your website, your new theme's te
 11.10.15
 - Updating cite conditional statement to avoid empty output.
 11.11.15
-<<<<<<< HEAD
 - Remove support for adding custom post type to admin at a glance widget.
-=======
 - Remove support for admin At A Glance widget till i understand it better.
-<<<<<<< HEAD
->>>>>>> develop
-=======
 11.13.15
 - Updating taxonomy parameter
 - Updating citation structure and and remove any hard backed styling markup.
-<<<<<<< HEAD
 - Add sass sample
->>>>>>> develop
-=======
 - Add sass sample and link to code pen sample
 - Adding title attribute
 - Updated structure with classes to avoid overly specific selectors and to handle styling of names with no link attribute.
-<<<<<<< HEAD
->>>>>>> develop
-=======
 - Added example file for adding review microdata to body of testimonial pages using the genesis specific filter.
->>>>>>> develop
