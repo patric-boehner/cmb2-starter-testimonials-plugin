@@ -58,4 +58,6 @@ In order to show the posts on the front end of your website, your new theme's te
 11.13.15
 - Updating taxonomy parameter
 - Updating citation structure and and remove any hard backed styling markup.
-- Add sass sample
+- Add sass sample and link to code pen sample
+- Adding title attribute
+- Updated structure with classes to avoid overly specific selectors and to handle styling of names with no link attribute.
