@@ -113,10 +113,9 @@ Using the Twenty Fifteen ```single.php``` file for example, you could easily mod
 1. Manually upload the ```cpt-testimonials``` plugin to your ```/wp-content/plugins/``` directory.
    - Alternatively upload the cpt-testimonials.zip file through the ```Plugins``` menu in your wordpress admin by clicking ```Add New``` > ```Upload Plugin```.
 2. Activate the plugin through the ```Plugins``` menu in WordPress.
-3. Go to the visit to ```Settings``` > ```Permalinks``` menu in WordPress after installing the plugin and save the permalinks settings.
-4. Download CMB2 from the wordpress plugin directory, https://wordpress.org/plugins/cmb2/
-5. Manually upload the ```cmb2``` plugin to your ```/wp-content/plugins/``` directory.
-6. Activate the CMB2 plugin through the ```Plugins``` menu in WordPress.
+3. Download CMB2 from the wordpress plugin directory, https://wordpress.org/plugins/cmb2/
+4. Manually upload the ```cmb2``` plugin to your ```/wp-content/plugins/``` directory.
+5. Activate the CMB2 plugin through the ```Plugins``` menu in WordPress.
 
 ## Required Plugins
 CMB2 can be built within the plugin itself, but for the sake of keeping the template plugin easy to update and expand upon, i have chosen not to included it. Otherwsie you will need to modify the plugin and include CMB2 on your own.
