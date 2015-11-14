@@ -76,7 +76,7 @@ The template plugin contains a folder called ```sample template files```. This f
 - ```markup.php```
 
 #### Notice
-I build the post type sample template files on the [Genesis Framework ](http://my.studiopress.com/themes/genesis/). The plugin itself will run independent of the theme being used, but the ```archive-``` and ```single-``` sample template files contain functions and hooks specific to the Genesis Framework. Each is using the ```get_template_part( 'content', 'testimonial', get_post_format() );``` function to include the ```content-testimonial.php``` file.
+I build the post type sample template files on the [Genesis Framework ](http://my.studiopress.com/themes/genesis/). The plugin itself will run independent of the theme being used, but the ```archive-``` and ```single-``` sample template files contain functions and hooks specific to the Genesis Framework. Each is using the ```get_template_part( 'content', 'testimonial' );``` function to include the ```content-testimonial.php``` file.
 
 The ```content-testimonial.php``` contains all the functions to output the testimonials custom metadata and all its basic markup structure, and can be used within any theme. You will simply need to modify your loop to include it.
 
