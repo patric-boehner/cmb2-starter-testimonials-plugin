@@ -52,9 +52,9 @@ For the sake of reference and later styling, the structure for the testimonials 
          <!-- ::before - for styling -->
          <span class="testimonial-name">
          <!-- name without link text -->
-         <a href="#">
-         <!-- name with link text -->
-         </a>
+         	<a href="#">
+         	<!-- name with link text -->
+         	</a>
          </span>
          <span class="testimonial-location" >
          <!-- location text -->
