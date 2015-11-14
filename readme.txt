@@ -71,4 +71,8 @@ In order to show the posts on the front end of your website, your new theme's te
 - Add sass sample and link to code pen sample
 - Adding title attribute
 - Updated structure with classes to avoid overly specific selectors and to handle styling of names with no link attribute.
+<<<<<<< HEAD
+>>>>>>> develop
+=======
+- Added example file for adding review microdata to body of testimonial pages using the genesis specific filter.
 >>>>>>> develop
