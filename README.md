@@ -73,6 +73,7 @@ The template plugin contains a folder called ```sample template files```. This f
 - ```single-pbcpt_testimonials.php```
 - ```content-testimonial.php```
 - ```_testimonials.sass```
+- ```markup.php```
 
 #### Notice
 I build the post type sample template files on the [Genesis Framework ](http://my.studiopress.com/themes/genesis/). The plugin itself will run independent of the theme being used, but the ```archive-``` and ```single-``` sample template files contain functions and hooks specific to the Genesis Framework. Each is using the ```get_template_part( 'content', 'testimonial', get_post_format() );``` function to include the ```content-testimonial.php``` file.
@@ -130,6 +131,7 @@ To use the plugin as is, you will need to install the following plugin:
 	- Structure of the single testimonial post type has been moved to its own part file ```content-testimonial.php```, to make it easier to reuse the structure in both single and archive template files.
 2. ~~Build the archive post template for testimonials~~.
 	- Done, though in reality i think can just create a function to reuse one of the template files and tell wordpress to use if for both. Haven't tried this on singe & archive post type so will have to give it a shot.
+3. Playing with Review schema. Added a sample file for the necessary genesis filter to add the review microdata to the body of the cpt archive page. I tried adding additional microdata to the ```content-testimonial.php``` file but google wouldn't validate as google only recognizes it in terms of an item. Not even sure if you can use the review microdata on testimonials.
 
 ## Change Log
 Please see the the ```readme.txt``` file included in the root of the plugin’s directory for a complete change log.
